@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/player_black">
+
+    <com.ksyun.media.player.KSYTextureView
+        android:id="@+id/texture_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        tools:targetApi="ice_cream_sandwich" />
+
+
+    <RelativeLayout
+        android:id="@+id/rightPanel_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:visibility="gone">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/player_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:visibility="visible">
+
+
+            <com.example.ywb.live.util.ProgressTextView
+                android:id="@+id/ptv_open_percentage"
+                android:layout_width="40dp"
+                android:layout_height="160dp"
+                android:visibility="invisible"
+                custom:ptv_textColor="#99CC33"
+                custom:ptv_textSize="10sp"
+                custom:ptv_thumHeight="8dp"
+                custom:ptv_thumWidth="12dp" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
