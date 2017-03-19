@@ -22,6 +22,8 @@ public class Contants {
         public static final String PULLURL="rtmp://cncplay.bingdou.tv/live/";//拉流地址
         public static final String PRESONDATA=BASE_URL+"/live/my_info.json";//获取个人资料
         public static final String UPDATEPRESONDATA=BASE_URL+"/live/user/update.json";//更改个人资料
+        public static final String MYLIVELIST=BASE_URL+"/live/my/list.json";//直播列表
+        public static final String DELETEMYLIVE=BASE_URL+"/live/remove.json";//直播列表
 
     }
 }

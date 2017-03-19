@@ -50,6 +50,7 @@
         <activity android:name=".activity.RegisterActivity"/>
         <activity android:name=".sky.CameraActivity"/>
         <activity android:name=".activity.UpDateActivity"/>
+        <activity android:name=".activity.base.MyLiveActivity"/>
     </application>
 
 </manifest>

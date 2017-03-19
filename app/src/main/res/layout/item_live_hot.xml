@@ -12,9 +12,8 @@
         android:padding="5dp"
         fresco:actualImageScaleType="centerInside"
         fresco:roundAsCircle="true"
-        fresco:roundWithOverlayColor="@color/gray_bg"
-        fresco:roundingBorderColor="@color/gray"
         fresco:roundingBorderWidth="1dp" />
+
 
     <TextView
         android:id="@+id/hot_name_tv"

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:fresco="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:padding="5dp">
+<LinearLayout
+    android:id="@+id/mylive_item_til"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+<com.facebook.drawee.view.SimpleDraweeView
+    android:id="@+id/mylive_header_img_sdv"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:padding="5dp"
+    fresco:actualImageScaleType="centerInside"
+    fresco:roundAsCircle="true"
+    fresco:roundingBorderWidth="1dp" />
+
+<TextView
+    android:id="@+id/mylive_name_tv"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:textSize="25sp"
+    android:layout_toRightOf="@id/mylive_header_img_sdv"
+    android:padding="5dp" />
+</LinearLayout>
+
+<com.facebook.drawee.view.SimpleDraweeView
+    android:id="@+id/mylive_face"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:layout_below="@id/mylive_item_til"
+    app:viewAspectRatio="1" />
+
+<TextView
+    android:id="@+id/mylive_state"
+    android:layout_width="60dp"
+    android:layout_height="30dp"
+    android:layout_alignTop="@+id/mylive_face"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="5dp"
+    android:background="@drawable/tv_bg"
+    android:layout_alignParentRight="true"
+    android:gravity="center"
+    android:text="直播"
+    android:textColor="@color/black" />
+</RelativeLayout>
